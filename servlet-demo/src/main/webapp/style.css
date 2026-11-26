@@ -1,0 +1,118 @@
+/* Réinitialisation : même marge et même calcul de taille partout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fond de page, centrage de la carte */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;       /* centre verticalement */
+    justify-content: center;   /* centre horizontalement */
+    padding: 16px;
+}
+
+/* La carte blanche */
+.carte {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* Champs du formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Quand on clique dans un champ */
+input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Bouton */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #4f46e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #4338ca;
+}
+
+/* Liens */
+a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lien {
+    text-align: center;
+    margin-top: 18px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Messages */
+.message {
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.message.erreur {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.message.succes {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* Page de bienvenue */
+.bienvenue {
+    text-align: center;
+}
+
+.bienvenue p {
+    color: #6b7280;
+    margin-top: 8px;
+}
